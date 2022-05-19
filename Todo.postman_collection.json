@@ -1,0 +1,406 @@
+{
+	"info": {
+		"_postman_id": "ef43739e-bd21-4ce1-baaa-9c04977cc4c6",
+		"name": "Todo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "123@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://miniature-coat-production.up.railway.app/api/signin",
+					"protocol": "https",
+					"host": [
+						"miniature-coat-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"\",\r\n    \"lastName\": \"\",\r\n    \"email\": \"\",\r\n    \"password\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://miniature-coat-production.up.railway.app/api/signup",
+					"protocol": "https",
+					"host": [
+						"miniature-coat-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "lastName",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://miniature-coat-production.up.railway.app/api/user",
+					"protocol": "https",
+					"host": [
+						"miniature-coat-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "lastName",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://miniature-coat-production.up.railway.app/api/initialdata",
+					"protocol": "https",
+					"host": [
+						"miniature-coat-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"initialdata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n    \"desc\": \"\",\r\n    \"status\": \"\",\r\n    \"progress\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://miniature-coat-production.up.railway.app/api/project/create",
+					"protocol": "https",
+					"host": [
+						"miniature-coat-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"project",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"\",\r\n    \"name\": \"\",\r\n    \"desc\": \"\",\r\n    \"status\": \"\",\r\n    \"progress\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://miniature-coat-production.up.railway.app/api/project/update",
+					"protocol": "https",
+					"host": [
+						"miniature-coat-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"project",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://miniature-coat-production.up.railway.app/api/project/delete",
+					"protocol": "https",
+					"host": [
+						"miniature-coat-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"project",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n    \"desc\": \"\",\r\n    \"status\": \"\",\r\n    \"progress\": \"\",\r\n    \"project\": \"\", // ID Project \r\n    \"issue\": \"\",\r\n    \"userid\": \"\" // User Id\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://miniature-coat-production.up.railway.app/api/task/create",
+					"protocol": "https",
+					"host": [
+						"miniature-coat-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"task",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"\",\r\n    \"name\": \"\",\r\n    \"desc\": \"\",\r\n    \"status\": \"\",\r\n    \"progress\": \"\",\r\n    \"project\": \"\", // ID Project \r\n    \"issue\": \"\",\r\n    \"userid\": \"\" // User Id\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://miniature-coat-production.up.railway.app/api/task/update",
+					"protocol": "https",
+					"host": [
+						"miniature-coat-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"task",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "_id",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://miniature-coat-production.up.railway.app/api/task/delete",
+					"protocol": "https",
+					"host": [
+						"miniature-coat-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"task",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task Search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "search",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "project",
+							"value": "",
+							"description": "id project",
+							"type": "default"
+						},
+						{
+							"key": "status",
+							"value": "",
+							"description": "0: Todo 1: In Progress 2:Done 3: Pending",
+							"type": "default"
+						},
+						{
+							"key": "date",
+							"value": "",
+							"description": "YYYY/MM/DD",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://miniature-coat-production.up.railway.app/api/task/search",
+					"protocol": "https",
+					"host": [
+						"miniature-coat-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"task",
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
